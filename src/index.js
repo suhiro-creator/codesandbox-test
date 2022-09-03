@@ -82,6 +82,11 @@
 // }
 // console.log(func2("func2です"));
 
+// 一行で書くときは「return」はいらない
+const func2 = (str) => str;
+console.log(func2("func2です"));
+// ※ この書き方に慣れて、その後{}を入れたとき「return」入れ忘れに注意！
+
 // const func3 = (a, b) => {
 //   return a + b;
 // }
