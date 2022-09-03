@@ -83,11 +83,46 @@
 // console.log(func2("func2です"));
 
 // 一行で書くときは「return」はいらない
-const func2 = (str) => str;
-console.log(func2("func2です"));
+// const func2 = (str) => str;
+// console.log(func2("func2です"));
 // ※ この書き方に慣れて、その後{}を入れたとき「return」入れ忘れに注意！
 
 // const func3 = (a, b) => {
 //   return a + b;
 // }
 // console.log(func3(10, 10));
+
+/**
+ * 分割代入
+ */
+// プロフィールのオブジェクトを定義
+// const myProfile = {
+//   name: "suhiro-",
+//   age: 43,
+// };
+
+// myProfileを分割代入
+// const {name, age} = myProfile;
+// message1に代入
+// const message1 = `名前は${name}です。年齢は${age}歳です。`;
+// console.log(message1);
+
+// 配列を定義し、分割代入でmessage2へ代入
+// const myProfile = ["suhiro-", 43];
+// const [name, age] = myProfile;
+// const message2 = `名前は${name}です。年齢は${age}歳です。`;
+// console.log(message2);
+
+/**
+ * デフォルト値、引数など
+ * ※riact開発でよく使うので、しっかり覚えよう！
+ */
+// 名前を引数として受け取り、メッセージを返す'sayHello関数'を定義
+// const sayHello = (name) => console.log(`こんにちは！${name}さん！`);
+// sayHello("suhiro-");
+// /**
+//  * ↑ 「sayHello(引数)」引数を指定していないと、'undefined'が返されるため
+//  *    関数name=○○と引数なしの場合に初期値(デフォルト値）を設定しておきましょう
+//  */
+// const sayHello2 = (name1 = "ゲスト") => console.log(`こんにちは！${name1}さん！！`);
+// sayHello2()
